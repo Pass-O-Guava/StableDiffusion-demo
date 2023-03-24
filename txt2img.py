@@ -1,7 +1,7 @@
 # make sure you're logged in with `huggingface-cli login`
 from diffusers import StableDiffusionPipeline
 
-pipe = StableDiffusionPipeline.from_pretrained("./stable-diffusion-v1-5-inference")
+pipe = StableDiffusionPipeline.from_pretrained("../sd_models/stable-diffusion-v1-5-inference")
 pipe = pipe.to("cuda")
 
 prompt = "a photo of an astronaut riding a horse on mars"

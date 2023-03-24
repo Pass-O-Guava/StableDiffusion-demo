@@ -4,8 +4,9 @@
 
 ### I. Create Project and downlod weights.
 ```shell
-mkdir diffusers-demo
-cd diffusers-demo
+mkdir stablediffusion-demo
+mkdir sd_models
+cd sd_models
 
 sudo apt-get install git-lfs
 git init
@@ -28,7 +29,6 @@ pip install safetensors
 ```
 ### II. Files tree of "stable-diffusion-v1-5":
 ```shell
-(stablediffusion) ubuntu@wilson:~/wy/AIGC/diffusers$ tree -h stable-diffusion-v1-5/
 stable-diffusion-v1-5/
 |-- [ 14K]  README.md
 |-- [4.0K]  feature_extractor
@@ -65,7 +65,6 @@ stable-diffusion-v1-5/
 ```
 Select inference model files and config files.
 ```shell
-(stablediffusion) ubuntu@wilson:~/wy/AIGC/stablediffusion-demo$ tree -h stable-diffusion-v1-5-inference/
 stable-diffusion-v1-5-inference
 ├── [4.0K]  feature_extractor
 │   └── [ 342]  preprocessor_config.json
@@ -106,7 +105,7 @@ Total: 5.5G
 python txt2img.py
 
 ```shell
-(stablediffusion) ubuntu@wilson:~/wy/AIGC/diffusers$ python txt2img.py 
+(stablediffusion) ubuntu@wilson:~/wy/AIGC/stablediffusion-demo$ python txt2img.py 
 WARNING[XFORMERS]: xFormers can't load C++/CUDA extensions. xFormers was built for:
     PyTorch 1.12.1+cu113 with CUDA 1105 (you have 1.12.1+cu113)
     Python  3.9.16 (you have 3.9.16)
