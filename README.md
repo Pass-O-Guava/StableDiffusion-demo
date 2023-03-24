@@ -63,17 +63,42 @@ stable-diffusion-v1-5/
     |-- [319M]  diffusion_pytorch_model.bin
     `-- [319M]  diffusion_pytorch_model.safetensors
 ```
+Select inference model files and config files.
+```shell
+(stablediffusion) ubuntu@wilson:~/wy/AIGC/stablediffusion-demo$ tree -h stable-diffusion-v1-5-inference/
+stable-diffusion-v1-5-inference
+├── [4.0K]  feature_extractor
+│   └── [ 342]  preprocessor_config.json
+├── [ 543]  model_index.json
+├── [4.0K]  safety_checker
+│   ├── [4.6K]  config.json
+│   └── [1.1G]  pytorch_model.bin
+├── [4.0K]  scheduler
+│   └── [ 308]  scheduler_config.json
+├── [4.0K]  text_encoder
+│   ├── [ 617]  config.json
+│   └── [469M]  pytorch_model.bin
+├── [4.0K]  tokenizer
+│   ├── [512K]  merges.txt
+│   ├── [ 472]  special_tokens_map.json
+│   ├── [ 806]  tokenizer_config.json
+│   └── [1.0M]  vocab.json
+├── [4.0K]  unet
+│   ├── [ 743]  config.json
+│   └── [3.2G]  diffusion_pytorch_model.bin
+└── [4.0K]  vae
+    ├── [ 547]  config.json
+    └── [319M]  diffusion_pytorch_model.bin
+```
 
-### III. Models:
+### III. Inference Models:
 |  Model  |  Name  |  File Size  |
 |  ----   | ----   | ----        |
 | text_encoder  | pytorch_model.bin | **469M** |
 | unet  | diffusion_pytorch_model.bin | **3.2G** |
 | vae  | diffusion_pytorch_model.bin | **319M** |
 | safety_checker  | pytorch_model.bin | **1.1G** |
-| use_train？？  | v1-5-pruned-emaonly.ckpt | 4.0G |
-| use_train？？ | v1-5-pruned.ckpt | 7.2G |
-
+Total: 5.5G
 
 ## 2. Test: 
 ### I. txt2img
@@ -94,9 +119,9 @@ Error caught was: No module named 'triton'
 ==> nsfw_content_detected: False
 ==> image saved.
 ```
-![t2i](runs/astronaut_rides_horse_00.png)
+
 ![t2i](runs/astronaut_rides_horse_01.png)
-![t2i](runs/astronaut_rides_horse_02.png)
+
 
 ### II. img2img
 
