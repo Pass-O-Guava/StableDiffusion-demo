@@ -17,15 +17,6 @@ git clone https://huggingface.co/runwayml/stable-diffusion-v1-5
 conda activate stablediffusion
 pip install torch==1.12.1+cu113 --extra-index-url https://download.pytorch.org/whl/cu113
 pip install transformers==4.19.2 diffusers==0.12.1 invisible-watermark
-
-# -------- option -----------
-pip install omegaconf==2.1.1
-pip install einops==0.3.0
-pip install pytorch-lightning==1.4.2
-pip install torchmetrics==0.6
-pip install open-clip-torch==2.7.0
-pip install safetensors
-# ---------------------------
 ```
 ### II. Files tree of "stable-diffusion-v1-5":
 ```shell
