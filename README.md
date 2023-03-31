@@ -14,7 +14,7 @@ git init
 git lfs install
 git clone https://huggingface.co/runwayml/stable-diffusion-v1-5
 
-# stable-diffusion-v1-5-inference (5.5G)
+# stable-diffusion-v1-5-inference (5.2G)
 链接: https://pan.baidu.com/s/1_RS94vJIdbwpmPbhRKmQnw?pwd=yzne 
 提取码: yzne
 
@@ -88,11 +88,11 @@ stable-diffusion-v1-5-inference
 ### III. Inference Models:
 |  Model  |  Name  |  File Size  |
 |  ----   | ----   | ----        |
-| text_encoder  | pytorch_model.bin | **469M** |
-| unet  | diffusion_pytorch_model.bin | **3.2G** |
-| vae  | diffusion_pytorch_model.bin | **319M** |
-| safety_checker  | pytorch_model.bin | **1.1G** |
-Total: 5.5G
+| text_encoder  | pytorch_model.bin | **470M** |
+| unet  | diffusion_pytorch_model.bin | **3.3G** |
+| vae  | diffusion_pytorch_model.bin | **320M** |
+| safety_checker  | pytorch_model.bin | **1.2G** |
+Total: 5.2G
 
 ## 2. Test: 
 ### I. txt2img
