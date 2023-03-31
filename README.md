@@ -14,6 +14,10 @@ git lfs install
 git clone https://huggingface.co/runwayml/stable-diffusion-v1-5
 ## download: 66G
 
+# stable-diffusion-v1-5-inference (5.5G)
+链接: https://pan.baidu.com/s/1_RS94vJIdbwpmPbhRKmQnw?pwd=yzne 
+提取码: yzne
+
 conda activate stablediffusion
 pip install torch==1.12.1+cu113 --extra-index-url https://download.pytorch.org/whl/cu113
 pip install transformers==4.19.2 diffusers==0.12.1 invisible-watermark
