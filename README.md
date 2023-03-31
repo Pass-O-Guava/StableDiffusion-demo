@@ -14,7 +14,7 @@ git init
 git lfs install
 git clone https://huggingface.co/runwayml/stable-diffusion-v1-5
 
-# stable-diffusion-v1-5-inference (5.2G)
+# stable-diffusion-v1-5-inference (5.2G, recommend!)
 链接: https://pan.baidu.com/s/1_RS94vJIdbwpmPbhRKmQnw?pwd=yzne 
 提取码: yzne
 
