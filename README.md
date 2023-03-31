@@ -8,11 +8,11 @@ mkdir stablediffusion-demo
 mkdir sd_models
 cd sd_models
 
+# stable-diffusion-v1-5 (66G)
 sudo apt-get install git-lfs
 git init
 git lfs install
 git clone https://huggingface.co/runwayml/stable-diffusion-v1-5
-## download: 66G
 
 # stable-diffusion-v1-5-inference (5.5G)
 链接: https://pan.baidu.com/s/1_RS94vJIdbwpmPbhRKmQnw?pwd=yzne 
